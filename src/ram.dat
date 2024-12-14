@@ -1,0 +1,43 @@
+1000 // ldi 0 0x0000
+0000
+1001 // ldi 1 0x0000
+0000
+1002 // ldi 2 0x0001
+0001
+1003 // ldi 3 0x904
+0904
+201b // ld 3 3
+74d3 // and 3 3 2
+4005 // jz check_dip1
+1000 // ldi 0 0x0000
+0000
+1001 // ldi 1 0x0000
+0000
+500e // jmp check_dip4
+1003 // ldi 3 0x902
+0902
+201b // ld 3 3
+74d3 // and 3 3 2
+4002 // jz check_dip2
+7010 // add 0 0 2
+5000 // jmp check_dip2
+1003 // ldi 3 0x903
+0903
+201b // ld 3 3
+74d3 // and 3 3 2
+4002 // jz check_dip4
+7051 // add 1 1 2
+5000 // jmp check_dip4
+1003 // ldi 3 0x905
+0905
+201b // ld 3 3
+74d3 // and 3 3 2
+4004 // jz display_count1
+1007 // ldi 7 0x906
+0906
+3078 // st 7 1
+5fdf // jmp loop
+1007 // ldi 7 0x906
+0906
+3038 // st 7 0
+5fdb // jmp loop

@@ -1,0 +1,72 @@
+# Exclude temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+*.backup
+*.temp
+*.cache
+*.out
+*.dmp
+*.dSYM
+*.ipch
+*.pch
+*.ilk
+*.pdb
+*.idb
+*.tlog
+*.lastbuildstate
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.rsuser
+
+# Exclude compiled files
+*.o
+*.obj
+*.elf
+
+# Exclude simulation files
+*.vcd
+*.wlf
+
+# Exclude Quartus database files
+db/
+incremental_db/
+
+# Exclude ModelSim files
+*.svo
+*.sdo
+*.xrf
+*.sft
+
+# Exclude generated files
+*.sof
+*.pof
+*.jic
+*.jam
+*.jbc
+*.ttf
+*.rbf
+*.hexout
+*.rpt
+*.cdf
+*.qws
+*.smsg
+*.summary
+*.jdi
+*.pin
+*.done
+
+# Exclude generated directories
+simulation/
+synthesis/
+output_files/
+
+# Exclude settings files
+settings.json
